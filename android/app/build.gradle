@@ -35,19 +35,19 @@ android {
 
     // signingConfigs {
     //     release {
-    //         storeFile file('xxxx.keystore')
-    //         keyAlias "xxxx.keystore"
-    //         storePassword "xxxx"
-    //         keyPassword "xxxx"
+    //         storeFile=file('xxxx.keystore')
+    //         keyAlias="xxxx.keystore"
+    //         storePassword="xxxx"
+    //         keyPassword="xxxx"
     //     }
     // }
 
     buildTypes {
         debug {
-            signingConfig signingConfigs.release
+            signingConfig = signingConfigs.debug
         }
         release {
-            signingConfig signingConfigs.release
+            signingConfig = signingConfigs.debug
         }
     }
 }
