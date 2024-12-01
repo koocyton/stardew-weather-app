@@ -1,0 +1,10 @@
+<li class='swiper-slide'><img src='([^<"]+)'></li></ul>
+.+?<div class="title">
+\s+([^<"]+)\s*<div [^>]+>
+.+?<span class="iconStar"></span>
+\s+([^<"]+)\s+<span class="bar">|
+.+?
+: ([^<"]+)\s+<span class="bar">|
+.+?<span class='viewCnt'>([^<"]+)</span>
+.+?<div class="desc">([^<"]+)</div>
+.+?<ul class="list_area" [^>]+>(.+?)</ul>

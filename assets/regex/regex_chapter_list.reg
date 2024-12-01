@@ -1,0 +1,6 @@
+<li class="episodeBox doubleThumb" [^>]+>
+.+?<a href="([^\"]+)">
+.+?<span class=[\'|\"]thumb_1.+? data-src="([^\"]+)">
+.+?<span class=[\'|\"]thumb_2.+? data-src="([^\"]+)">
+.+?<div class='title'>([^<]+)
+.+?<div class='pubDate'>([^<]+)
