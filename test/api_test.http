@@ -1,0 +1,28 @@
+### config
+@appIdKey=28c3a2e95a5bfba67aa95b3d209985c7
+@lat=39
+@lon=106
+
+### 1. Current Weather Data
+GET https://api.openweathermap.org/data/2.5/weather?lat={{lat}}&lon={{lon}}&appid={{appIdKey}} HTTP/1.1
+content-type: application/json
+
+### 2. Hourly Forecast 4 days
+GET https://pro.openweathermap.org/data/2.5/forecast/hourly?lat={{lat}}&lon={{lon}}&appid={{appIdKey}} HTTP/1.1
+content-type: application/json
+
+### 3. Daily Forecast 16 days
+GET https://api.openweathermap.org/data/2.5/forecast/daily?lat={{lat}}&lon={{lon}}&appid={{appIdKey}} HTTP/1.1
+content-type: application/json
+
+### 4. Climatic Forecast 30 days
+GET https://pro.openweathermap.org/data/2.5/forecast/climate?lat={{lat}}&lon={{lon}}&appid={{appIdKey}} HTTP/1.1
+content-type: application/json
+
+### 5. 5 Day / 3 Hour Forecast
+GET https://api.openweathermap.org/data/2.5/forecast?lat={{lat}}&lon={{lon}}&appid={{appIdKey}} HTTP/1.1
+content-type: application/json
+
+### 6. Road Risk API
+GET https://api.openweathermap.org/data/2.5/roadrisk?appid={{appIdKey}} HTTP/1.1
+content-type: application/json
